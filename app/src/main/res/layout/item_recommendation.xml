@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/recyclerView_carousel"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:clipChildren="false"
+		android:clipToPadding="false"
+		android:nestedScrollingEnabled="false"
+		tools:listitem="@layout/item_recommendation_manga" />
+
+	<org.draken.usagi.core.ui.widgets.DotsIndicator
+		android:id="@+id/dots"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginVertical="@dimen/margin_small"
+		app:dotAlpha="0.6"
+		app:dotScale="0.4"
+		app:dotSize="10dp"
+		app:dotSpacing="4dp"
+		tools:max="6"
+		tools:progress="2" />
+
+</LinearLayout>
+

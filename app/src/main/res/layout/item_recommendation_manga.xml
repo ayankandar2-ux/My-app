@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.carousel.MaskableFrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_marginHorizontal="6dp"
+	android:layout_marginVertical="4dp"
+	android:background="@drawable/list_selector"
+	app:shapeAppearance="?shapeAppearanceCornerExtraLarge"
+	tools:layout_height="@dimen/recommendation_item_height">
+
+	<org.draken.usagi.image.ui.CoverImageView
+		android:id="@+id/imageView_cover"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scaleType="centerCrop"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Usagi.Cover.Medium"
+		tools:src="@tools:sample/backgrounds/scenic" />
+
+	<View
+		android:id="@+id/gradient_overlay"
+		android:layout_width="match_parent"
+		android:layout_height="120dp"
+		android:layout_gravity="bottom" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		android:orientation="vertical"
+		android:paddingHorizontal="16dp"
+		android:paddingBottom="16dp">
+
+		<TextView
+			android:id="@+id/textView_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ellipsize="end"
+			android:maxLines="2"
+			android:textAppearance="?attr/textAppearanceTitleMedium"
+			android:textColor="?attr/colorOnSurface"
+			tools:text="@tools:sample/lorem" />
+
+		<TextView
+			android:id="@+id/textView_subtitle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"
+			android:ellipsize="end"
+			android:maxLines="1"
+			android:textAppearance="?attr/textAppearanceBodySmall"
+			android:textColor="?attr/colorOnSurfaceVariant"
+			tools:text="@tools:sample/lorem/random" />
+
+	</LinearLayout>
+
+</com.google.android.material.carousel.MaskableFrameLayout>
