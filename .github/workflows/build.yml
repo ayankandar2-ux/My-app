@@ -84,13 +84,13 @@ jobs:
       contents: write
     steps:
       - name: Download Debug APK
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: app-debug-apk
           path: dist/debug
 
       - name: Download Release APK
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: app-release-apk
           path: dist/release
