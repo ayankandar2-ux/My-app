@@ -102,7 +102,7 @@ jobs:
           cp dist/release/*.apk "dist/final/ZenithUsagi-${{ github.ref_name }}-release.apk"
 
       - name: Publish GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: dist/final/*
           name: "Zenith Usagi ${{ github.ref_name }}"
