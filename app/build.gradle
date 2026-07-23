@@ -16,7 +16,7 @@ android {
 	namespace = 'org.draken.usagi'
 
 	defaultConfig {
-		applicationId 'dev.ayankandar.zenithusagi'
+		applicationId 'org.draken.usagi'
 		minSdk = 21
 		targetSdk = 37
 		versionCode = 16
