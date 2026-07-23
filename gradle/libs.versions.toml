@@ -55,7 +55,7 @@ tsukimix = "1.0.3"
 usagiRpc = "1.0.2"
 viewpager2 = "1.1.0"
 #noinspection GradleDependency
-webkit = "1.14.0"
+webkit = "1.16.0"
 #noinspection GradleDependency
 workRuntime = "2.10.5"
 workinspector = "1.2"
